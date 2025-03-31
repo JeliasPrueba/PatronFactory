@@ -1,0 +1,181 @@
+.main{
+    height: 100vh;
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-rows:  50% 50%;
+}
+
+.Top{
+    position: relative;
+    background: url('/MarcoTop.svg') no-repeat;
+    background-position: right top;
+    -background-color: red;
+    
+}
+
+.Formulario{
+    
+    background: url('/MarcoTop.svg') no-repeat;
+    background-position: right top;
+}
+
+.Formulario form{
+    position: relative;
+    position: absolute;
+    bottom: -50%;
+    left: 35%;
+    width: 30%;
+    height: 100%;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 5px 10px 15px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/MarcoBottom.svg') no-repeat left bottom;
+    background-position: left bottom;
+}
+
+.Box-Top{
+    background: url('/MarcoTop.svg') no-repeat;
+    background-position: right top; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.Inputs-btn{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Inputs{
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+}
+.Inputs .Box-Input{
+    position: relative;
+    height: 60px;
+    border: 2px solid #08753F;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 5px 5px;
+}
+.Box-Input::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #08753F;
+    z-index: 98;
+}
+
+.Inputs .Box-Input label{
+    position: relative;
+    bottom: 7px;
+    background: #fff;
+    z-index: 99;
+    padding-inline: 5px;
+}
+.Inputs .Box-Input input{
+    height: 60px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    background: transparent;
+}
+
+.content-Btns{
+    display: flex;
+    justify-content: center;
+}
+
+.Inputs-btn .BtnGenerator1{
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: none;
+    background: #08753F;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.Inputs-btn .BtnGenerator2{
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: none;
+    background: #E21F24;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.Inputs-btn .BtnGenerator3{
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: none;
+    background: #09BAFE;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.Apagar{
+    display: none;
+}
+
+
+.Bottom{
+    background: url('/MarcoBottom.svg') no-repeat;
+    background-position: left bottom;
+    -background-color: black;
+}
+
+.Left-Btn img{
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.Left-Btn{
+    cursor: pointer;
+}
+.Rigth-Btn{
+    cursor: pointer;
+    border: 2px solid gray;
+}
+
+.content-Btns button{
+    background: gray;
+    border-radius: 100vmax;
+    width: 50px;
+    height: 50px;
+    border: none;
+    z-index: 99;
+
+}
+
+.content-Btns img{
+    width: 30px;
+    height: 100%;
+    background: transparent;
+    
+}

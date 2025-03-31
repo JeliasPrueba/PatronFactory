@@ -1,0 +1,43 @@
+
+
+<main class="main">
+    <div class="content">
+      <div class="Top">
+  
+        <div class="Formulario">
+      
+          <form action="" [formGroup]="Formulario">
+            <div class="Box-Top"></div>
+            <div class="Inputs-btn">
+            <!-- <input type="number" [formControl]="Formulario.controls.id" name="id" placeholder="id"> -->
+            <div class="Inputs">
+              <div class="Box-Input">
+                <div><label for="">Nombre del usuario</label></div>
+                <input required type="text" placeholder="Nombre" [formControl]="Formulario.controls.nombre" name="nombre">
+              </div>
+              <div class="Box-Input">
+                <div><label for="">Valor Total</label></div>
+                <input required type="number" placeholder="Valor Total" [formControl]="Formulario.controls.valorTotal" name="valorTotal">
+              </div>
+            </div>
+      
+            <div class="content-Btns">
+              <button (click)="Atras()" class="Left-Btn"><img  src="/Arrow.svg" alt=""></button>
+                <button [disabled]="Formulario.invalid" class="{{class == 'BtnGenerator1' ? 'BtnGenerator1' : 'Apagar'}}" (click)="Download('Xlsx')">Excel</button>
+                <button [disabled]=Formulario.invalid class="{{class == 'BtnGenerator2' ? 'BtnGenerator2' : 'Apagar'}}" (click)="Download('Pdf')">Pdf</button>
+                <button [disabled]=Formulario.invalid class="{{class == 'BtnGenerator3' ? 'BtnGenerator3' : 'Apagar'}}" (click)="Download('Csv')">Csv</button>
+              <button (click)="Avanzar()" class="Rigth-Btn"><img src="/Arrow.svg" alt=""></button>
+            </div>
+            </div>
+            
+          </form>
+        </div>
+  
+      </div>
+      <div class="Bottom"></div>
+    </div>
+  </main>
+  
+  
+  
+  
