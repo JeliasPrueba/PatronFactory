@@ -33,7 +33,7 @@ export class FilesReportsService {
       const Url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = Url;
-      a.download = "Contrato.pdf"
+      a.download = "Contrato.docx"
       a.click();
       window.URL.revokeObjectURL(Url);
     })
